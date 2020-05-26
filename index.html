@@ -8,23 +8,31 @@
   </head>
   <body>
     <header>
-      <div class="burger"></div>
-      <div class="logo">
-        <img src="img/logo.png">
-      </div>
-      <div class="contact__info">
-        <div class="mail">
-          <p class="conection">пишите мне на email</p>
-          <p сlass="mail__info"><img src="img/mail.png">  info@diagnistics.by</p>
+      <div class="header__wrapper">
+        <div class="logo_div">
+          <div class="menu">
+            <div class="burger">
+              <span></span>
+            </div>
+          </div>
+          <img src="img/logo.png" class="logo" alt="Инженерная диагностика">
+        </div>  
+        <div class="info_div">
+          <div class="mail">
+            <p class="connection">пишите мне на email</p>
+            <div class="organization">
+              <img src="img/mail.png"><a href="mailto:info@diagnistics.by" class="mail__info">info@diagnistics.by</a>
+            </div>
+          </div>
+          <div class="phone">
+            <p class="connection connection_phone"><img src="img/phone.png"> Есть вопросы? Звоните!</p>
+            <div class="organization2">
+              <a href="tel:+375 (29) 456-45-45" class="phone__number">+375 (29) 456-45-45</a>
+            </div>  
+          </div>
         </div>
-        <div class="phone">
-          <p class="conection"><img src="img/phone.png"> Есть вопросы? Звоните!</p>
-          <p class="phone__number">+375 (29) 456-45-45</p>
-        </div>
       </div>
-    </header>
-    <main>
-      <section class="commercial__proposal">
+      <div class="commercial__proposal">
         <div class="head__proposal">
           <div class="left_proposal">
             <h1>Независимое обследование зданий и сооружений</h1>
@@ -32,30 +40,33 @@
           </div>
           <div class="right_proposal">
             <div class="proposal__button">
-              <img srс="img/download.png"><span>получить коммерческое</span>
-              <p>Отправьте техзадание и получите коммерческое предложение в течении 15 минут на свой email или в мессенджер</p>
+              <img src="img/down.png"><span>получить коммерческое</span>
             </div>
+              <p>Отправьте техзадание и получите коммерческое предложение в течении 15 минут на свой email или в мессенджер</p>
           </div>
         </div>
         <div class="bot__proposal">
-          <div class="positions">
-            <img src="img/logo.png">
-            <p>Начинаем работать без аванса</p>
+          <div class="bot-left__proposal">
+            <div class="positions">
+              <img src="img/01.svg">
+              <p>Начинаем работать без аванса</p>
+            </div>
+            <div class="positions">
+              <img src="img/02.svg">
+              <p>Предоставляем отсрочку платежа</p>
+            </div>
+            <div class="positions">
+              <img src="img/03.svg">
+              <p>Всегда называем справедливую цену</p>
+            </div>
           </div>
-          <div class="positions">
-            <img src="img/logo.png">
-            <p>Предоставляем отсрочку платежа</p>
+        
+          <div class="video__button">
+
+            <a href="https://www.youtube.com/"><img src="img/video.png"></a>
+   
           </div>
-          <div class="positions">
-            <img src="img/logo.png">
-            <p>Всегда называем справедливую цену</p>
-          </div>
-          <div class="video">
-            <img src="img/roundtext.svg">
-            <img src="img/video.png">
-            <img src="img/polygon.png">
-          </div>
-        </div>
+      </div>
         <div class="short__info">
           <div class="left__info">
             <h2>Мы работаем быстро и наши отчеты проходят согласование с первого раза</h2>
@@ -75,32 +86,34 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </header>
+    <main>
       <section class="services">
         <h5>услуги</h5>
         <h1>Выполняем как комплексное обследование, так и отдельные виды работ</h1>
         <div class="slider">
           <div class="slide">
             <img src="img/slide1.png">
-            <h4>Общее обследование</h4>
+            <h3>Общее обследование</h3>
             <p>Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности и т.д.</p>
             <a href="#">Подробнее <img src="img/arrow.svg"></a>
           </div>
           <div class="slide">
             <img src="img/slide2.png">
-            <h4>Тепловизионная съемка</h4>
+            <h3>Тепловизионная съемка</h3>
             <p>Исследование системы отопления, вентиляции и кондиционирования, а также оценка энергоэффективности здания</p>
             <a href="#">Подробнее <img src="img/arrow.svg"></a>
           </div>
           <div class="slide">
             <img src="img/slide3.png">
-            <h4>Телеинспекция инженерных сетей</h4>
+            <h3>Телеинспекция инженерных сетей</h3>
             <p>Цветная телевизионная съемка внутренней поверхности любых протяженных объектов до 250 метров</p>
             <a href="#">Подробнее <img src="img/arrow.svg"></a>
           </div>
           <div class="slide">
             <img src="img/slide4.png">
-            <h4>Тахеометрическая съемка</h4>
+            <h3>Тахеометрическая съемка</h3>
             <p>Построение чертежей при помощи лазера, который с точностью до микрона определяет расположение объектов в пространстве</p>
             <a href="#">Подробнее <img src="img/arrow.svg"></a>
           </div>
@@ -112,7 +125,7 @@
         <div class="step__one">
           <img src="img/worker.png">
           <div class="step_first">
-            <span>ШАГ №1</span><h4>Подготовительные работы</h4>
+            <span>ШАГ №1</span><h3>Подготовительные работы</h3>
             <p>Мы осматриваем здание, делаем замеры и проверяем наличие визуально заметных дефектов: трещин, коррозии, повреждения фундамента и т.д.</p>
             <div class="mini__block">
               <img src="img/circle.png">

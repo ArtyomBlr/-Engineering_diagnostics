@@ -1,2 +1,19 @@
+// Abstracts
+
+@import "abstracts/constants";
+@import "abstracts/mixin";
+@import "abstracts/placeholders";
+
+// Base
+
 @import "base/base";
-@import "abstracts/constants.scss";
+@import "base/normalize";
+
+// Layouts
+
+@import "layout/header";
+
+// Components
+
+@import "components/burgermenu";
+

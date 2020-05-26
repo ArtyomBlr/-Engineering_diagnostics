@@ -1,0 +1,39 @@
+.burger {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 40px;
+  height: 22px;
+}
+
+.burger span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: $color-background-first;
+  border-radius: 10px;
+
+}
+
+.burger:before,
+.burger:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background: $color-background-first;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.burger:before {
+  top: 10px;
+}
+
+.burger:after {
+  bottom: 0;
+}
