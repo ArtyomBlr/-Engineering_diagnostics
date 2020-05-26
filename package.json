@@ -1,0 +1,20 @@
+{
+  "name": "-engineering_diagnostics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/style.scss sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtyomBlr/-Engineering_diagnostics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtyomBlr/-Engineering_diagnostics/issues"
+  },
+  "homepage": "https://github.com/ArtyomBlr/-Engineering_diagnostics#readme"
+}
