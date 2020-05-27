@@ -1,0 +1,241 @@
+.services {
+  max-width: $width;
+  background: url('../img/bgservices.png') no-repeat;
+  background-size: 1920px;
+  padding: 80px 0;
+  box-sizing: border-box;
+  @include mobileL-width{
+    padding: 50px 0;
+  }
+}
+
+.services h5 {
+  margin-top: 5px;
+  font-family: Bebas Neue;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  color: $color-active;
+  text-align: center;
+  @include mobileL-width{
+    margin: 0px 20px;
+    text-align: left;
+  }
+}
+
+.services h2 {
+  font-family: Gilroy-Exbold;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  color: $color-background-first;
+  text-align: center;
+  margin: 0 40px;
+  @include mobileL-width{
+    font-size: 26px;
+    line-height: 31px;
+    text-align: left;
+    margin: 40px 20px 10px;
+  }
+}
+
+.slider {
+  display: flex;
+  max-width: 1670px;
+  margin: 64px 0 34px 250px;
+  overflow: hidden;
+  @include tablet-width{
+    margin: 0;
+  }
+}
+
+.slide {
+  max-width: 400px;
+  margin-right: 80px;
+  @include tablet-width{
+    margin: 64px 184px 20px;
+  }
+  @include mobileL-width{
+    max-width: 320px;
+    margin: 38px 27px 20px;
+  }
+  @include mobileS-width{
+    max-width: 280px;
+    margin: 38px 20px 20px;
+  }
+}
+
+.slide h3 {
+  width: 400px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: $color-background-first;
+  @include mobileL-width{
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.slider_img {
+  @include mobileL-width{
+    width: 100%;
+  }
+}
+
+.slide p {
+  font-family: Proxima Nova;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: $color-background-first;
+  opacity: 0.7;
+  @include mobileL-width{
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.slide a {
+  font-family: Bebas Neue;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 7px;
+  color: $color-active;
+  text-decoration: none;
+  transition: 0.3s ease;
+  @include mobileL-width{
+    font-size: 16px;
+  }
+}
+
+.slide img {
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+
+.slide a:hover {
+  transition: 0.3s ease;
+  color: $color-activelinks;
+}
+
+.progressbar {
+  @include tablet-width{
+    display: none;
+  }
+}
+
+.steps {
+  
+}
+
+.steps_p{
+  max-width: 508px;
+  margin: 0 auto;
+  font-family: Gilroy-Exbold;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: $color-text3;
+}
+
+#individual {
+  font-family: Bebas Neue;
+  font-size: 80px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.step__one {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  max-width: 1920px;
+  @include laptopL-width{
+    margin-top: 60px;
+  }
+}
+
+.step__one img{
+  max-width: 960px;
+}
+
+.step__number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.step__number span{
+  display: block;
+  background: $color-active;
+  padding: 4px 10px;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $color-text4;
+}
+
+.step__number h3{
+  margin-left: 20px;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  color: $color-text4;
+}
+
+.informative__text{
+  margin-top: -5px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: $color-text2;
+  opacity: 0.7;
+  text-align: left;
+}
+
+.id__text {
+  font-size: 16px;
+}
+
+.step_content {
+  width: 100%;
+  background-color: #F5F5F5;
+  box-sizing: border-box;
+  padding: 55px 260px 40px 100px;
+}
+
+.mini__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.italic {
+  font-family: Proxima Nova;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: $color-text3;
+  opacity: 0.7;
+}
+
+.circle {
+  width: 56px;
+  border-radius: 50%;
+  border: 8px solid $color-background-first;
+  margin-right: 37px;
+}

@@ -5,5 +5,25 @@
   letter-spacing: -0.5px;
 }
 
+@mixin laptopL-width {
+  @media (max-width: $laptopL-width) { @content; }
+}
+
+@mixin laptopS-width {
+  @media (max-width: $laptopS-width) { @content; }
+}
+
+@mixin tablet-width {
+  @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin mobileL-width {
+  @media (max-width: $mobileL-width) { @content; }
+}
+
+@mixin mobileS-width {
+  @media (max-width: $mobileS-width) { @content; }
+}
+
 
 

@@ -2,6 +2,9 @@ header {
   max-width: $width;
   background: url('../img/bg.jpg') no-repeat;
   background-size: 1920px;
+  @include mobileL-width {
+    background-size: 1750px;
+  }
 }
 
 .header__wrapper {
@@ -12,6 +15,13 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @include laptopL-width {
+    box-sizing: border-box;
+    padding: 10px 40px;
+  }
+  @include tablet-width {
+    padding: 30px 40px 0px;
+  }
 }
 
 .logo_div {
@@ -23,6 +33,12 @@ header {
 
 .logo {
   margin-left: 80px;
+  @include tablet-width {
+    margin-left: 25vw;
+  }
+  @include mobileL-width {
+    margin-left: 5vw;
+  }
 }
 
 .info_div {
@@ -30,6 +46,9 @@ header {
   flex-direction: row;
   align-items: baseline;
   height: 60px;
+  @include tablet-width {
+    display: none;
+  }
 }
 
 .mail {
@@ -81,8 +100,16 @@ header {
   color:$color-activelinks;
 }
 
+#line {
+  position: absolute;
+  top: 90px;
+}
+
 .commercial__proposal {
   margin-top: 7%;
+  @include tablet-width {
+    margin-top: 6%;
+  }
 }
 
 .head__proposal {
@@ -92,15 +119,34 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  @include laptopL-width {
+    box-sizing: border-box;
+    padding: 0px 40px;
+  }
+  @include laptopS-width {
+    padding: 25px 40px;
+  }
+  @include tablet-width{
+    flex-direction: column;
+    margin: -15px auto;
+  }
 }
 
 .left_proposal {
   max-width: 580px;
+  @include tablet-width{
+    max-width: 100%;
+  }
 }
 
 .left_proposal h1{
+  font-family: Gilroy-Exbold;
+  font-size: 42px;
   color: $color-background-first;
-  font-weight: 900;
+  @include mobileL-width{
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 
 .left_proposal p{
@@ -109,6 +155,10 @@ header {
   font-size: 20px;
   line-height: 34px;
   opacity: 0.7;
+  @include mobileL-width{
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .proposal__button {
@@ -118,6 +168,11 @@ header {
   padding: 26px 58px;
   box-sizing: border-box;
   transition: 0.3s ease;
+  @include mobileL-width{
+    max-width: 100%;
+    height: 40px;
+    padding: 10px;
+  }
 }
 
 .proposal__button:hover {
@@ -141,6 +196,16 @@ header {
   font-weight: 400;
   line-height: 28px;
   color: white;
+  @include tablet-width{
+    max-width: 100%;
+  }
+  @include mobileL-width{
+    max-width: 100%;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
 
 .positions {
@@ -149,6 +214,15 @@ header {
   align-items: center;
   max-width: 260px;
   margin-right: 100px;
+  @include laptopL-width {
+    margin-right: 40px;
+  }
+}
+
+.positions img{
+  @include mobileL-width{
+    width: 40px;
+  }
 }
 
 .positions p {
@@ -158,6 +232,9 @@ header {
   line-height: 28px;
   font-weight: bold;
   color: $color-background-first;
+  @include laptopL-width {
+    font-size: 12px;
+  }
 }
 
 .bot__proposal {
@@ -166,14 +243,35 @@ header {
   align-items: flex-end;
   justify-content: space-between;
   margin: 0 auto;
+  @include laptopL-width {
+    box-sizing: border-box;
+    padding: 10px 40px;
+  }
+  @include tablet-width{
+    align-items: center;
+  }
+  @include mobileL-width{
+    box-sizing: border-box;
+    padding: 10px 40px;
+  }
 }
 
 .bot-left__proposal {
   display: flex;
+  @include tablet-width{
+    display: block;
+  }
+  @include mobileS-width{
+    margin-top: -30px;
+  }
 }
 
 .video__button {
+  margin-left: 10vw;
   transition: 0.3s ease;
+  @include mobileL-width{
+    display: none;
+  }
 }
 
 .video__button:hover {
@@ -183,4 +281,129 @@ header {
 
 .video__button img {
   max-width: 220px;
+  @include laptopS-width {
+    max-width: 300px;
+  }
+}
+
+.short__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: $content-width;
+  margin: 116px auto 0;
+  @include laptopL-width {
+    margin: 116px 40px 0;
+  }
+  @include laptopS-width {
+    flex-wrap: wrap;
+    margin: 20px auto 0;
+    justify-content: space-around;
+  }
+  @include tablet-width{
+    flex-wrap: wrap;
+    margin: 20px auto 0;
+    justify-content: center;
+  }
+  @include mobileL-width{
+    margin: 50px auto 20px;
+  }
+  @include mobileS-width{
+    margin: 0px auto 20px;
+  }
+}
+
+.left__info, .right__info {
+  max-width: 460px;
+  @include laptopS-width{
+    max-width: 90%;
+  }
+  @include tablet-width{
+    max-width: 90%;
+  }
+}
+
+.tv__picture {
+  max-width: 360px;
+  @include laptopS-width{
+    max-width: 220px;
+  }
+  @include tablet-width{
+    max-width: 220px;
+  }
+  @include mobileL-width{
+    display: none;
+  }
+}
+
+.left__info h2 {
+  font-family: Gilroy-Exbold;
+  font-size: 32px;
+  line-height: 42px;
+  @include mobileL-width{
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.left__info p {
+  font-family: Proxima Nova;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: $color-text1;
+  opacity: 0.7;
+  @include mobileL-width{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+}
+
+.right__info h3 {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  @include laptopS-width{
+    line-height: 12px;
+  }
+  @include tablet-width{
+    line-height: 12px;
+  }
+  @include mobileL-width{
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.getting__services {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  @include laptopS-width{
+    margin-bottom: 10px;
+  }
+  @include tablet-width{
+    margin-bottom: 10px;
+  }
+}
+
+.getting__services img{
+  margin-right: 27px;
+}
+
+.getting__services span{
+  font-family: Proxima Nova;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: $color-text2;
+  opacity: 0.7;
+  @include mobileL-width{
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

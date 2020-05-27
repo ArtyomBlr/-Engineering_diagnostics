@@ -3,17 +3,14 @@ html {
 }
 
 h1 {
-  font-family: Gilroy-Regular;
   @include font(42px, bold, 51px, -0.5px);
 }
 
 h2 {
-  font-family: Proxima Nova;
   @include font(32px, normal, 51px, -0.5px);
 }
 
 h3 {
-  @extend %font-add;
   @include font(24px, normal, 51px, -0.5px);
 }
 
