@@ -1047,6 +1047,12 @@ header {
   text-align: center;
   color: #505050;
 }
+@media (max-width: 375px) {
+  .steps_p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
 
 #individual {
   font-family: Bebas Neue;
@@ -1054,6 +1060,17 @@ header {
   line-height: 64px;
   text-align: center;
   letter-spacing: 5px;
+}
+@media (max-width: 768px) {
+  #individual {
+    font-size: 60px;
+  }
+}
+@media (max-width: 375px) {
+  #individual {
+    font-size: 40px;
+    line-height: 44px;
+  }
 }
 
 .step__one {
@@ -1067,9 +1084,24 @@ header {
     margin-top: 60px;
   }
 }
+@media (max-width: 1024px) {
+  .step__one {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 375px) {
+  .step__one {
+    margin-top: 30px;
+  }
+}
 
-.step__one img {
-  max-width: 960px;
+.worker {
+  width: 960px;
+}
+@media (max-width: 1024px) {
+  .worker {
+    width: 100%;
+  }
 }
 
 .step__number {
@@ -1091,6 +1123,12 @@ header {
   text-transform: uppercase;
   color: #151515;
 }
+@media (max-width: 375px) {
+  .step__number span {
+    font-size: 12px;
+    line-height: 23px;
+  }
+}
 
 .step__number h3 {
   margin-left: 20px;
@@ -1100,6 +1138,12 @@ header {
   line-height: 34px;
   letter-spacing: -0.5px;
   color: #151515;
+}
+@media (max-width: 375px) {
+  .step__number h3 {
+    font-size: 20px;
+    line-height: 31px;
+  }
 }
 
 .informative__text {
@@ -1113,6 +1157,12 @@ header {
   opacity: 0.7;
   text-align: left;
 }
+@media (max-width: 375px) {
+  .informative__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 
 .id__text {
   font-size: 16px;
@@ -1124,12 +1174,27 @@ header {
   box-sizing: border-box;
   padding: 55px 260px 40px 100px;
 }
+@media (max-width: 1024px) {
+  .step_content {
+    padding: 40px 100px;
+  }
+}
+@media (max-width: 375px) {
+  .step_content {
+    padding: 20px 20px;
+  }
+}
 
 .mini__block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 375px) {
+  .mini__block {
+    display: none;
+  }
 }
 
 .italic {

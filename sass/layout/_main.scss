@@ -127,10 +127,6 @@
   }
 }
 
-.steps {
-  
-}
-
 .steps_p{
   max-width: 508px;
   margin: 0 auto;
@@ -139,6 +135,10 @@
   line-height: 28px;
   text-align: center;
   color: $color-text3;
+  @include mobileL-width{
+    font-size: 14px;
+    line-height: 23px;
+  }
 }
 
 #individual {
@@ -147,6 +147,13 @@
   line-height: 64px;
   text-align: center;
   letter-spacing: 5px;
+  @include tablet-width{
+    font-size: 60px;
+  }
+  @include mobileL-width{
+    font-size: 40px;
+    line-height: 44px;
+  }
 }
 
 .step__one {
@@ -157,10 +164,19 @@
   @include laptopL-width{
     margin-top: 60px;
   }
+  @include laptopS-width{
+    flex-wrap: wrap;
+  }
+  @include mobileL-width{
+    margin-top: 30px;
+  }
 }
 
-.step__one img{
-  max-width: 960px;
+.worker {
+  width: 960px;
+  @include laptopS-width{
+    width: 100%;
+  }
 }
 
 .step__number {
@@ -181,6 +197,10 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   color: $color-text4;
+  @include mobileL-width{
+    font-size: 12px;
+    line-height: 23px;
+  }
 }
 
 .step__number h3{
@@ -191,6 +211,10 @@
   line-height: 34px;
   letter-spacing: -0.5px;
   color: $color-text4;
+  @include mobileL-width{
+    font-size: 20px;
+    line-height: 31px;
+  }
 }
 
 .informative__text{
@@ -203,6 +227,10 @@
   color: $color-text2;
   opacity: 0.7;
   text-align: left;
+  @include mobileL-width{
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .id__text {
@@ -214,6 +242,12 @@
   background-color: #F5F5F5;
   box-sizing: border-box;
   padding: 55px 260px 40px 100px;
+  @include laptopS-width{
+    padding: 40px 100px;
+  }
+  @include mobileL-width{
+    padding: 20px 20px;
+  }
 }
 
 .mini__block {
@@ -221,6 +255,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @include mobileL-width{
+    display: none;
+  }
 
 }
 
